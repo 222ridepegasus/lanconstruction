@@ -1,0 +1,27 @@
+---
+// filepath: /Users/kierankelly/Code/lan-construction/src/pages/OurWork.astro
+import WorkCard from '../components/WorkCard.astro';
+
+// Import your images
+import LanIMG_01 from '../assets/lan_test_01.avif?url';
+import LanIMG_02 from '../assets/lan_test_02.avif?url';
+import LanIMG_03 from '../assets/lan_test_03.avif?url';
+import LanIMG_04 from '../assets/lan_test_04.avif?url';
+import LanIMG_05 from '../assets/lan_test_05.avif?url';
+import LanIMG_06 from '../assets/lan_test_06.avif?url';
+---
+
+<section class="py-16 pb-20">
+  <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-4">Our Work</h2>
+    <p class="text-center text-xl text-gray-500 mb-10">
+      Take a look at some of our completed construction projects
+    </p>
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-5">
+    <WorkCard title="LAN Test 01" category="Commercial" imageUrl={LanIMG_01} />
+    <WorkCard title="LAN Test 02" category="Residential" imageUrl={LanIMG_02} />
+    <WorkCard title="LAN Test 03" category="Industrial" imageUrl={LanIMG_03} />
+    <WorkCard title="LAN Test 04" category="Commercial" imageUrl={LanIMG_04} />
+    <WorkCard title="LAN Test 05" category="Renovation" imageUrl={LanIMG_05} />
+    <WorkCard title="LAN Test 06" category="Industrial" imageUrl={LanIMG_06} />
+  </div>
+</section>

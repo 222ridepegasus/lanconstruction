@@ -1,0 +1,30 @@
+---
+export interface Props {
+  title: string;
+  category: string;
+  imageUrl?: string;
+}
+const { title, category, imageUrl } = Astro.props;
+---
+
+<div class="bg-white rounded-xl shadow-sm border border-gray-300 w-full flex flex-col overflow-hidden">
+  <div class="bg-gray-100 aspect-[16/9] w-full flex items-center justify-center relative overflow-hidden">
+    {imageUrl ? (
+        <img
+        src={imageUrl}
+        alt={title}
+        class="object-cover w-full h-full absolute inset-0"
+        loading="lazy"
+        />
+    ) : (
+        <svg class="w-16 h-16 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 48 48">
+        <rect width="48" height="48" rx="8" fill="#e5e7eb"/>
+        <path d="M16 32l8-8 8 8M16 24l8-8 8 8" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )}
+  </div>
+  <div class="p-4">
+    <div class="font-semibold text-lg text-gray-900">{title}</div>
+    <div class="text-sm text-gray-500 mt-0 font-medium">{category}</div>
+  </div>
+</div>

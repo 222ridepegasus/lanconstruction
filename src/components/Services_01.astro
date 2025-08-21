@@ -1,0 +1,34 @@
+---
+import ServiceCard from './ServiceCard.astro';
+---
+
+<section class="bg-gray-100 py-16 pb-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-4">Our Services</h2>
+    <p class="text-center text-xl text-gray-500 mb-10">
+      We offer comprehensive construction services to meet all your building needs
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <ServiceCard
+        iconType="home"
+        title="Residential Construction"
+        description="Custom homes, renovations, and residential projects built to your specifications."
+      />
+      <ServiceCard
+        iconType="building"
+        title="Commercial Buildings"
+        description="Office buildings, retail spaces, and commercial facilities for businesses."
+      />
+      <ServiceCard
+        iconType="factory"
+        title="Industrial Facilities"
+        description="Warehouses, manufacturing plants, and specialized industrial structures."
+      />
+      <ServiceCard
+        iconType="wrench"
+        title="Renovations & Remodeling"
+        description="Transform existing spaces with our expert renovation and remodeling services."
+      />
+    </div>
+  </div>
+</section>

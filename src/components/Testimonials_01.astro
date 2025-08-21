@@ -1,0 +1,29 @@
+---
+import TestimonialCard from './TestimonialCard.astro';
+---
+
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-4">What Our Clients Say</h2>
+    <p class="text-center text-xl text-gray-500 mb-10">
+      Don't just take our word for it – hear from our satisfied customers
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <TestimonialCard
+        quote="BuildCorp exceeded our expectations with our home renovation. Professional, on-time, and excellent quality work."
+        name="Sarah Johnson"
+        company="Johnson Family"
+      />
+      <TestimonialCard
+        quote="They transformed our restaurant space beautifully. The team was professional and the project was completed on schedule."
+        name="Mike Chen"
+        company="Chen's Restaurant"
+      />
+      <TestimonialCard
+        quote="Outstanding work on our new warehouse facility. BuildCorp delivered exactly what we needed within budget."
+        name="David Wilson"
+        company="Wilson Manufacturing"
+      />
+    </div>
+  </div>
+</section>

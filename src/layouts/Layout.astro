@@ -1,22 +1,29 @@
+---
+import "../styles/global.css";
+
+
+import Rev_Header_01 from "../components/Rev_Header_01.astro";
+import OurWork_01 from "../components/OurWork_01.astro";
+import Services_01 from "../components/Services_01.astro";
+import Testimonials_01 from "../components/Testimonials_01.astro";
+import Footer_01 from "../components/Footer_01.astro";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+  <head>	
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>LAN Construction</title>
+  </head>
+  <body class="antialiased">
+	<Rev_Header_01 />
+    <OurWork_01 />
+	<Services_01 />
+	<Testimonials_01 />
+	<Footer_01 />
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+  </body>
+</html>
